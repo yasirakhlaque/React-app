@@ -1,0 +1,14 @@
+/* Core-Services.css */
+.Cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .Cards-container {
+        flex-direction: column;
+    }
+}

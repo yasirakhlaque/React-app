@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap);
+
+.cards {
+    font-family: "poppins", sans-serif;
+    height: 40vh;
+    width: 20%;
+    padding: 3vh;
+    border-radius: 25px;
+    float: left;
+    margin: 3vh;
+    color: black;
+    background-color: #f7f1f7; /* Light purple for unclicked */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cards.clicked {
+    background-color: #241c24; /* Dark color when clicked */
+    color: #f4e3f5; /* Light text color when clicked */
+}
+
+.logo {
+    height: 5vh;
+}
+
+.logo i {
+    font-size: 5vh;
+}
+
+.cards h3 {
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;
+}
+
+ul li {
+    font-size: 0.6rem;
+    background-color: #f7f1f7; /* Light background color for unclicked */
+    border: 1px solid black;
+    height: 5vh;
+    width: 33%;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cards.clicked ul li {
+    background-color: #241c24; /* Dark background color when clicked */
+    border: 1px solid white;
+    color: #f4e3f5;
+}
+
+button.card-button {
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+    background-color: white; /* White background for unclicked */
+    width: 100%;
+    border-radius: 18px;
+    border: none;
+    height: 5vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.card-button.clicked-button {
+    background: linear-gradient(to top, #fa98f5, #9687ad); /* Gradient when clicked */
+    color: #f4e3f5;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .cards {
+        width: 45%;
+    }
+
+    .cards h3 {
+        font-size: 1rem;
+    }
+
+    .cards p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+    .cards {
+        width: 80%;
+        margin: 2vh auto;
+    }
+
+    .logo i {
+        font-size: 3vh;
+    }
+
+    .cards h3 {
+        font-size: 0.9rem;
+    }
+
+    .cards p {
+        font-size: 0.8rem;
+    }
+
+    ul li {
+        font-size: 0.5rem;
+        height: 4vh;
+        width: 80%;
+        margin: 1vh 0;
+    }
+
+    button.card-button {
+        font-size: 0.8rem;
+        height: 4vh;
+    }
+}
+
+/* Extra-small devices */
+@media screen and (max-width: 480px) {
+    .cards {
+        width: 90%;
+        padding: 2vh;
+    }
+
+    .cards h3 {
+        font-size: 0.8rem;
+    }
+
+    .cards p {
+        font-size: 0.7rem;
+    }
+
+    ul li {
+        font-size: 0.5rem;
+        width: 90%;
+    }
+
+    button.card-button {
+        font-size: 0.7rem;
+        height: 4vh;
+    }
+}
