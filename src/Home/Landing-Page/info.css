@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap);
 .info{
+    font-family: 'poppins' , sans-serif;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -10,13 +11,14 @@
 }
 
 h1.info-h1{
-    font-weight: 900;
+    font-weight: 700;
     color: blueviolet;
     font-size: 3rem;
 
 }
 
 h3.info-h3{
+    font-weight: 500;
     font-size: 2rem;
     margin: 3vh;
     color: #fff;
