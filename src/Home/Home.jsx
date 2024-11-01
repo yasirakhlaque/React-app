@@ -7,7 +7,7 @@ export default function Home(){
     }
     return (
         <div style={home}>
-        {/* <LandingPage /> */}
+        <LandingPage />
         <CoreServices/>
         </div>
     )
